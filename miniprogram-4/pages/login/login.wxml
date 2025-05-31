@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+<!-- 登录注册标题文字 -->
+<view class="title">{{TitleText}}</view>
+<!-- 用户名，密码输入框 -->
+<view class="inputBox">
+  <input type="text" placeholder="请输入用户名" data-id="user" bindinput="getinput" value="{{userValue}}" placeholder-style="color:#ccc8c8" />
+</view>
+<view class="inputBox">
+    <input type="text" placeholder="请输入密码" data-id="password" bindinput="getinput" value="{{passwordValue}}" placeholder-style="color:#ccc8c8" />
+</view>
+<!-- 登录注册按钮 -->
+<button class="btn" disabled="{{btnState}}" bind:tap="login">{{TitleText}}</button>
+
+<!-- 登录注册页面转换 -->
+<view class="toRegister" bind:tap="change">
+    <view class="btntTip">{{ToText}}</view>
+</view>
+</view>

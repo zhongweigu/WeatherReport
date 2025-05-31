@@ -1,0 +1,41 @@
+{
+  "entryPagePath": "pages/demo/demo",
+  "pages": [
+    "pages/demo/demo",
+    "pages/page1/page1",
+    "pages/personaldetail/detail",
+    "pages/user/user",
+    "pages/login/login",
+    "pages/others/others"
+  ],
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#500",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "pictures/user.png",
+        "iconPath": "pictures/user.png",
+        "pagePath": "pages/user/user",
+        "text": "用户中心"
+      },
+      {
+        "selectedIconPath": "pictures/local_weather.png",
+        "iconPath": "pictures/local_weather.png",
+        "pagePath": "pages/page1/page1",
+        "text": "本地天气"
+      },
+      {
+        "selectedIconPath": "pictures/others.png",
+        "iconPath": "pictures/others.png",
+        "pagePath": "pages/others/others",
+        "text": "其他地区"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "天气预报",
+    "navigationBarBackgroundColor": "#fff"
+  }
+}

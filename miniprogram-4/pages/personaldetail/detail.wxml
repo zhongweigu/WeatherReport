@@ -1,0 +1,38 @@
+<!--pages/personaldetail/detail.wxml-->
+<view class="container">
+  <view class="user">
+        <view class="userCenter">
+            <view class="title">头像</view>
+        </view>
+        <image bind:tap="chooseImage" class="picture" src="{{avatar}}" mode="" />
+  </view> 
+  
+  <view class="user">
+        <view class="userCenter">
+            <view class="title">昵称</view>
+        </view>
+        <view class="inputBox">
+            <input type="text" data-id="user" bindinput="getinput" value="{{username}}" />
+        </view>
+  </view> 
+
+  <view class="user">
+        <view class="userCenter">
+            <view class="title">手机号</view>
+        </view>
+        <view class="inputBox">
+            <input type="text" data-id="phone" bindinput="getinput" value="{{phone}}" />
+        </view>
+  </view> 
+
+  <view class="user">
+        <view class="userCenter">
+            <view class="title">签名</view>
+        </view>
+        <view class="inputBox">
+            <input type="text" data-id="personal" bindinput="getinput" value="{{personal_text}}" />
+        </view>
+  </view> 
+
+  <button class="btn" bind:tap="save" disabled="{{disabled}}">保存修改</button>
+</view>

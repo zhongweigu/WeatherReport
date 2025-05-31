@@ -1,0 +1,55 @@
+/* pages/personaldetail/detail.wxss */
+page{
+  background: cornflowerblue;
+}
+
+.container{
+  margin: 20rpx 20rpx 0;
+}
+
+
+.user{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  background: rgb(107, 139, 160);
+  width: 100%;
+}
+
+.user input{
+  text-align: right;
+}
+
+.picture{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+}
+
+.userCenter{
+  flex: 1;
+  margin-left: 20rpx;
+}
+
+.title{
+  font-size: 35rpx;
+  font-weight: 600;
+  color: #000;
+}
+
+.text{
+  padding-top: 10rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: antiquewhite;
+  padding-right: 0;
+}
+
+.btn {
+  display: block;
+  width: 95%;
+  margin: 10px 0;
+  background-color: rgb(32, 150, 57);
+}
+

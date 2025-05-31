@@ -1,0 +1,102 @@
+.temp {
+  font-size: 80rpx;
+  font-family: 'Times New Roman', Times, serif;
+  color:rgb(5, 35, 80);
+  text-align:center;
+  opacity: 100%;
+  position: relative;
+  margin-top:20rpx
+}
+
+.weather{
+  font-size: 200rpx;
+  color:rgb(6, 35, 59);
+  text-align:center;
+  margin-top:40rpx;
+  opacity: 80%;
+}
+
+.text{
+  font-size: 45rpx;
+  text-align:center;
+  margin-top:30rpx;
+  opacity: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.weather-image{
+  width: 80rpx;
+  height:100rpx;
+  margin-left:45%;
+  margin-top:30rpx;
+  text-align: center;
+  position: relative;
+}
+
+.bc-pic{
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  width:100%;
+  height:100vh;
+  position: relative;
+  opacity: 75%;
+  z-index: 0;
+  margin-bottom:-1250rpx;
+}
+
+.main{
+  z-index: 1;
+}
+
+.weather-other{
+  display: flex;
+  flex-wrap: wrap;
+  text-align:center;
+}
+
+.other-item{
+  width: 33.3%;
+  margin: 10rpx 0;
+  position :relative;
+}
+
+.other-title{
+  font-size: 34rpx;
+  margin-bottom: 10rpx;
+}
+
+.four{
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+  border-top:1px solid #549ed0 ;
+  border-bottom:1px solid #549ed0 ;
+  background-color:white;
+  position: relative;
+  opacity: 30%;
+  margin-top: 10rpx;
+  border-radius: 5%;
+}
+
+.four-title{
+  text-align: center;
+  font-size: 45rpx;
+  position: relative;
+  margin-top: 20rpx;
+}
+
+.four-item{
+  display: inline-block;
+  width: 100rpx;
+}
+
+.fxdata-icon image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.four-item view{
+  margin: 20rpx 0;
+}

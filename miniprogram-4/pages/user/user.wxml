@@ -1,0 +1,19 @@
+<!--pages/user/user.wxml-->
+<image class = "bc1" src = "/pictures/bc-pic.png"></image>
+<view class="container">
+    <view class="userbox" bind:tap="goDetail">
+        <image class="picture" src="{{avatar}}" mode="" />
+        <view class="userCenter">
+            <view class="title">{{username}}</view>
+            <view class="person_text">{{personal_text}}</view>
+        </view>
+    </view> 
+
+    <view class="service" bind:tap="goOpts">
+      <view class="userCenter">
+            <view class="title">设置</view>
+        </view>
+    </view>
+
+    <button class="btn" bind:tap="goLogin" >注销/登录</button>
+</view>

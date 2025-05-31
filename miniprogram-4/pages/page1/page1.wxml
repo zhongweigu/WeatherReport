@@ -1,0 +1,44 @@
+
+<view class = "main"> 
+  <image class = "bc-pic" src = "/pictures/bc-pic.png"></image>
+  <view class = "text">南京市 栖霞区</view>
+  <view class = "weather">{{weather.text}}</view>
+  <image class = "weather-image" src = "/pictures/icons/{{weather.icon}}.svg"></image>
+  <view class = "temp">{{weather.temp}}℃</view>
+  <view class="weather-other">
+    <view class="other-item">
+      <view class="other-title">{{weather.windDir}}</view>
+      <view class="other-details">{{weather.windScale}}级</view>
+    </view>
+    <view class="other-item">
+      <view class="other-title">体感温度</view>
+      <view class="other-details">{{weather.feelsLike}}℃</view>
+    </view>
+    <view class="other-item">
+      <view class="other-title">相对湿度</view>
+      <view class="other-details">{{weather.humidity}}%</view>
+    </view>
+    <view class="other-item">
+      <view class="other-title">大气压强</view>
+      <view class="other-details">{{weather.pressure}}hpa</view>
+    </view>
+    <view class="other-item">
+      <view class="other-title">能见度</view>
+      <view class="other-details">{{weather.vis}}公里</view>
+    </view>
+    <view class="other-item">
+      <view class="other-title">云量</view>
+      <view class="other-details">{{weather.cloud}}%</view>
+    </view>
+  </view>
+  <view class="four-title">24h预报</view>
+  <scroll-view scroll-x="true" class="four">
+    <view class="four-item" wx:for="{{hour}}" wx:key="index">
+      <view>{{times[index]}}</view>
+      <view class="fxdata-icon"><image src="/pictures/icons/{{item.icon}}.svg"></image></view>
+      <view>{{item.text}}</view>
+      <view>{{item.temp}}℃</view>
+    </view>
+  </scroll-view>
+</view>
+

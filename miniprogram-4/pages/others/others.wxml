@@ -1,0 +1,48 @@
+<image class = "bc2" src = "/pictures/bc-pic.png"></image>
+
+<view class="container">
+  <!-- 搜索区域 -->
+  <view class="search-section">
+    <input 
+      class="search-input" 
+      placeholder="请输入城市名" 
+      value="{{searchCity}}"
+      bindinput="onCityInput"
+    />
+    <button 
+      class="search-btn" 
+      bindtap="searchWeather"
+    >
+      搜索
+    </button>
+  </view>
+
+  <!-- 天气列表 -->
+  <scroll-view 
+    class="weather-list" 
+    scroll-y="true"
+  >
+    <block wx:for="{{weatherList}}" wx:key="id">
+      <view class="weather-card ">
+        <view class="weather-header">
+          <text class="city-name">{{item.city}}</text>
+          <text 
+            class="delete-btn" 
+            data-id="{{item.id}}"
+            bindtap="deleteWeather"
+          >
+            ×
+          </text>
+        </view>
+        <view class="weather-content">
+          <view class="weather-info">
+            <text>天气：{{item.forecast.day.weather}}</text>
+            <text>温度：{{item.forecast.day.temperature}}°C </text>
+            <text>风力：{{item.forecast.day.wind_power}}</text>
+           
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

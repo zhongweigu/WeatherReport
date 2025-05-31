@@ -1,0 +1,60 @@
+/* pages/login/login.wxss */
+page{
+  background: cornflowerblue;
+}
+
+.title{
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+  font-size: 48rpx;
+  font-weight: 400;
+  color: #262424;
+  /* border:1rpx solid black */
+}
+
+.inputBox{
+  border-bottom: 1rpx solid #f0f0f0;
+  margin: 0 20rpx;
+  width: 80%;
+}
+input{
+  height: 110rpx;
+}
+
+
+.toRegister{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40rpx;
+}
+.btntTip{
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #666262;
+  margin-right: 20rpx;
+} 
+
+.bottom{
+  text-align: center;
+  position: absolute;
+  bottom: 160rpx;
+  width: 100%;
+}  
+.tip{
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #999393;
+  margin-bottom: 40rpx;
+}
+.bottom image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.btn {
+  display: block;
+  width: 95%;
+  margin: 10px 0;
+  background-color: rgb(32, 150, 57);
+}
